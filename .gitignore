@@ -1,0 +1,76 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ============================================================
+# ENVIRONMENT & SECRETS — never commit these
+# ============================================================
+.env
+.env.*
+.env*.local
+# Explicitly name the ones used in this project:
+# .env.local            ← GEMINI_API_KEY, STRIPE keys, SUPABASE keys
+
+# ============================================================
+# DEPENDENCIES
+# ============================================================
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# ============================================================
+# NEXT.JS BUILD OUTPUT
+# Contains absolute paths with your machine username in source maps
+# ============================================================
+/.next/
+/out/
+/build
+
+# ============================================================
+# TESTING
+# ============================================================
+/coverage
+
+# ============================================================
+# CLAUDE CODE — dev tooling, may contain local file paths
+# launch.json is safe to commit if you want to share dev config,
+# but session data / SKILL.md files should not be published.
+# ============================================================
+.claude/settings.local.json
+.claude/projects/
+.claude/todos/
+# Uncomment the line below to exclude the entire .claude folder:
+# .claude/
+
+# ============================================================
+# VERCEL
+# ============================================================
+.vercel
+
+# ============================================================
+# DEBUG & LOG FILES — may contain absolute paths with username
+# ============================================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+logs/
+
+# ============================================================
+# MACOS
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V7
+.Trashes
+
+# ============================================================
+# EDITOR & SYSTEM
+# ============================================================
+*.pem
+*.tsbuildinfo
+next-env.d.ts
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
