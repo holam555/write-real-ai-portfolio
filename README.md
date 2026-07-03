@@ -1,5 +1,7 @@
 # Write Real AI
 
+**Live demo: [writerealai.com](https://writerealai.com)**
+
 A full-stack SaaS product that helps non-native English speakers rewrite their writing in a more natural, fluent tone, with a "personal style clone" feature that learns a user's own writing voice from a sample and applies it to future rewrites. Bilingual (English / Traditional Chinese) end to end.
 
 **This is a public portfolio snapshot of a live, self-hosted production app.** The proprietary prompt-engineering text has been redacted (`src/lib/prompts.ts`), and internal security/deployment runbooks are excluded — everything else, including the full application architecture, is real and unmodified.
