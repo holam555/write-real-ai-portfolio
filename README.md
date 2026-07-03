@@ -1,6 +1,6 @@
 # Write Real AI
 
-A full-stack SaaS product that rewrites AI-generated text to read naturally and pass AI-detection tools, with a "personal style clone" feature that learns a user's own writing voice from a sample and applies it to future rewrites. Bilingual (English / Traditional Chinese) end to end.
+A full-stack SaaS product that helps non-native English speakers rewrite their writing in a more natural, fluent tone, with a "personal style clone" feature that learns a user's own writing voice from a sample and applies it to future rewrites. Bilingual (English / Traditional Chinese) end to end.
 
 **This is a public portfolio snapshot of a live, self-hosted production app.** The proprietary prompt-engineering text has been redacted (`src/lib/prompts.ts`), and internal security/deployment runbooks are excluded — everything else, including the full application architecture, is real and unmodified.
 
@@ -17,7 +17,7 @@ A full-stack SaaS product that rewrites AI-generated text to read naturally and 
 
 ## What It Does
 
-- **AI rewrite engine** — restructures AI-generated essays using targeted linguistic rules (sentence variety, banned words, transition patterns) to reduce AI-detector flagging, while preserving meaning and length.
+- **Natural-tone rewrite engine** — restructures stiff or overly formal writing using targeted linguistic rules (sentence variety, plain-word substitutions, transition patterns) so it reads the way a fluent, natural writer would phrase it, while preserving the original meaning and length.
 - **Personal style clone** — analyzes a user-submitted writing sample, reverse-engineers a rule set describing their voice (sentence rhythm, vocabulary, transitions), and reuses it to rewrite future text in that style.
 - **Guest + authenticated flows** — a rate-limited guest rewrite path for first-time visitors, and a full account flow with usage quotas for signed-up users.
 - **Subscription billing** — Stripe Checkout for upgrades, a self-serve Billing Portal, and webhook-driven entitlement updates (subscription state is never trusted from the client).
@@ -52,7 +52,7 @@ src/
 
 ## About the Redactions
 
-`src/lib/prompts.ts` contains the actual prompt-engineering logic that makes the rewrite quality and AI-undetectability work — that's the product's core IP, so the prompt bodies are replaced with placeholders here. The surrounding code (how prompts are selected, composed, and sent to Gemini) is untouched. Happy to walk through the real prompts and the reasoning behind them directly.
+`src/lib/prompts.ts` contains the actual prompt-engineering logic that makes the rewrite quality work — that's the product's core IP, so the prompt bodies are replaced with placeholders here. The surrounding code (how prompts are selected, composed, and sent to Gemini) is untouched. Happy to walk through the real prompts and the reasoning behind them directly.
 
 ---
 
